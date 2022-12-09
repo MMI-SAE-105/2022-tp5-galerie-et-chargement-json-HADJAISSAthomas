@@ -15,7 +15,7 @@
 }">
 
     <h1>Galerie</h1>
-    <div class="overlay" x-show="imageOverlay" @click="imageOverlay = null">
+    <div class="overlay" x-show="imageOverlay" @click="imageOverlay = null" @keyup.escape.window="imageOverlay = null">
         <figure><img :src="imageOverlay" alt="image 237... un chiot"></figure>
 
 </body>
